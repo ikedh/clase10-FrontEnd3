@@ -3,13 +3,24 @@ import { useState, useEffect } from 'react'
 
 const AxiosEjemplo = () => {
 
+    const [name, setName] = useState(null)
+
+    useEffect(() => {
+      axios.get("https://pokeapi.co/api/v2/pokemon/charizard")
+      .then(res => {
+        setName(res.data.name)
+      })
+
+
+    }, [])
+    
     
     
 
   return (
     <>
-             <h2>Axios</h2>
-             Nombre Pokemon : 
+             <h1>Axios</h1>
+             Nombre Pokemon : {name}
 
              {/* Colocar las habilidades y el numero de Order del Pokemon */}
 

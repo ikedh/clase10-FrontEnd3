@@ -15,8 +15,9 @@ function App() {
 
   return (
     <>
-      <FetchEjemplo/>
-      <AxiosEjemplo/>
+      {/* <FetchEjemplo/>
+      <hr></hr>
+      <AxiosEjemplo/> */}
       <hr/>
       <div>
           <Contador/>
